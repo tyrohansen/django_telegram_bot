@@ -2,10 +2,11 @@ import json
 import requests
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
-from channel.credentials import TELEGRAM_API_URL, URL
-import urllib.parse
-
+from django.conf import settings
 from channel.services import create_user_session, get_default_menu, get_menu, get_menu_options, get_session
+
+URL = f'{settings.APP_URL}/getpost/'
+TELEGRAM_API_URL = f'https://api.telegram.org/bot{settings.TELEGRAM_TOKEN}/'
 
 @csrf_exempt
 def telegram_bot(request):
