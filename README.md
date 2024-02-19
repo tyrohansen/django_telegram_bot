@@ -39,7 +39,7 @@ This Django project is a Telegram service that allows users to interact with a T
    
    - Create a new bot using the BotFather on Telegram.
    - Obtain the bot token.
-   - Update the `TELEGRAM_BOT_TOKEN` variable in `settings.py` with your bot token.
+   - Update the `TELEGRAM_TOKEN` variable in `.env` with your bot token.
 
 5. Apply migrations:
 
@@ -64,9 +64,9 @@ This Django project is a Telegram service that allows users to interact with a T
 
 ## Configuration
 
-- `TELEGRAM_BOT_TOKEN`: Token provided by the BotFather for accessing the Telegram Bot API.
+- `TELEGRAM_TOKEN`: Token provided by the BotFather for accessing the Telegram Bot API.
 - `DEBUG`: Set to `True` for development, `False` for production.
-- Additional Django settings can be configured in `settings.py` as per project requirements.
+- Additional Django settings can be configured in `.env` as per project requirements.
 
 ## Contributing
 
