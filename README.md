@@ -12,7 +12,7 @@ This Django project is a Telegram service that allows users to interact with a T
 ## Requirements
 
 - Python 3.x
-- Django
+- Django 4.5
 - Django REST Framework
 
 ## Installation
